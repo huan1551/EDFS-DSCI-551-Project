@@ -2,7 +2,7 @@
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://huan1551-edfs-dsci-551-project-edfs-llju8u.streamlit.app/)
 
 ## Team Members
-Zirong Huang, Zhuoqi (Meggie) Cai
+Zirong Huang, [Zhuoqi (Meggie) Cai](https://github.com/MaggieZQC)
 ## GOAL
 Developing and utilizing an emulation-based system for distributed file storage and parallel computation. 
 
