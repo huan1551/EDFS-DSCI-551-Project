@@ -41,8 +41,9 @@ elif command[:2] == 'ls':
     except:
         st.write(whole)
 elif command[:3] == 'cat':
-    temp = command[4:].replace('.','_')
-    cat_ref = db.reference(temp)
+    temp = command[4:].replace('.','_').split('/')
+    st.text(temp[-1])
+    cat_ref = db.reference(temp[-1])
     st.write(cat_ref.get())
 elif command[:2] == 'rm':
     temp = command[3:].replace('.','_')
