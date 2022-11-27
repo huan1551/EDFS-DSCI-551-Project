@@ -26,7 +26,7 @@ st.title("✨ Here is the EDFS Interface, Let's Play With Those Commands!! ✨")
 st.header("Commands That You Can Give It A Try")
 st.subheader('📝NOTE: After the execution of the command, please delete the command you entered. Forgot to delete the command will affect the proformace of the database')
 st.subheader('mkdir | ls | cat | rm')
-command = st.text_input("Enter Your Command Here then press enter", key = 'base', placeholder='mkdir /user/john || ls /user || cat /user/john/hello.txt || rm /user/john/cars.csv')
+command = st.text_input("Enter Your Command Here then press enter", key = 'base', placeholder='mkdir /user/john || ls /user || cat /user/john/cars.csv || rm /user/john/cars.csv')
 #mkdir, cat, rm
 if command[:5] == 'mkdir':
     mkdir_ref = db.reference(command[6:])
