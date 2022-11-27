@@ -46,8 +46,14 @@ elif command[:3] == 'cat':
     st.write(cat_ref.get())
 elif command[:2] == 'rm':
     temp = command[3:].replace('.','_')
-    rm_ref = db.reference(temp)  
-    rm_ref.delete()
+    part_ref = db.reference(temp)
+    loc_info = part_ref.get()
+    for path in loc_info:
+        file_path = loc_info[path]
+        rm_ref = db.reference(file_path)  
+        rm_ref.delete()
+    meta_ref = db.reference(temp)
+    meta_ref.delete()
     st.success('Content of '+command[3:]+' are successfully removed')
 
 #put
