@@ -1,5 +1,5 @@
 # [EDFS-DSCI-551-Project](https://huan1551-edfs-dsci-551-project-edfs-llju8u.streamlit.app/)
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://huan1551-edfs-dsci-551-project-edfs-llju8u.streamlit.app/)
+[[Click Here to Open the Project on Your Browser](https://huan1551-edfs-dsci-551-project-edfs-llju8u.streamlit.app/)
 
 ## Team Members
 [Zirong Huang](https://github.com/huan1551), [Zhuoqi (Maggie) Cai](https://github.com/MaggieZQC)
