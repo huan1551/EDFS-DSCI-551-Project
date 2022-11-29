@@ -31,7 +31,6 @@ command = st.text_input("Enter Your Command Here then press enter", key = 'base'
 if command[:5] == 'mkdir':
     mkdir_ref = db.reference(command[6:])
     mkdir_ref.set('')
-    st.success('Directory '+command[6:]+' has been created')
 elif command[:2] == 'ls':
     ls = command[3:]
     ls_ref = db.reference(ls)
@@ -55,7 +54,6 @@ elif command[:2] == 'rm':
         rm_ref.delete()
     meta_ref = db.reference(temp)
     meta_ref.delete()
-    st.success('Content of '+command[3:]+' are successfully removed')
 
 #put
 ##command and file upload
