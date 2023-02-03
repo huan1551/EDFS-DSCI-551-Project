@@ -12,13 +12,6 @@ st.set_page_config(
 key_dict = json.loads(st.secrets["textkey"])
 cred = credentials.Certificate(key_dict)
 
-#Make sure we only initialize once our database
-@st.cache
-def firebase_init (cred):
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://dsci-551-finalproject-default-rtdb.firebaseio.com/'
-    })
-firebase_init(cred)
 
 def mapPartition(requests):
     ref = db.reference('/user/Susan/steam_csv')
