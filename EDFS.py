@@ -15,8 +15,8 @@ key_dict = json.loads(st.secrets["textkey"])
 cred = credentials.Certificate(key_dict)
 
 #Make sure we only initialize once our database
-@st.cache
-def firebase_init (cred):
+@st.experimental_singleton
+def firebase_init (_cred):
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://dsci-551-finalproject-default-rtdb.firebaseio.com/'
     })
